@@ -1,0 +1,43 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'search', 'wraith' ]
+2 info using npm@1.4.14
+3 info using node@v0.10.29
+4 verbose node symlink /usr/bin/node
+5 warn Building the local index for the first time, please be patient
+6 verbose url raw /-/all
+7 verbose url resolving [ 'https://npm.bwrnd.com/', './-/all' ]
+8 verbose url resolved https://npm.bwrnd.com/-/all
+9 info trying registry request attempt 1 at 15:24:44
+10 http GET https://npm.bwrnd.com/-/all
+11 http 404 https://npm.bwrnd.com/-/all
+12 verbose bad json Cannot GET /-/all
+13 error registry error parsing json
+14 verbose headers { server: 'nginx/1.6.0',
+14 verbose headers   date: 'Sun, 22 Jun 2014 19:24:43 GMT',
+14 verbose headers   'content-type': 'text/html',
+14 verbose headers   'transfer-encoding': 'chunked',
+14 verbose headers   connection: 'keep-alive',
+14 verbose headers   vary: 'Accept-Encoding',
+14 verbose headers   'x-powered-by': 'Sinopia/0.8.1',
+14 verbose headers   'x-status-cat': 'http://flic.kr/p/aV6juR',
+14 verbose headers   'content-encoding': 'gzip' }
+15 error SyntaxError: Unexpected token C
+15 error Cannot GET /-/all
+15 error
+15 error     at Object.parse (native)
+15 error     at RegClient.<anonymous> (/usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:240:23)
+15 error     at /usr/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:217:7
+15 error     at Gunzip.onEnd (zlib.js:166:5)
+15 error     at Gunzip.emit (events.js:117:20)
+15 error     at _stream_readable.js:929:16
+15 error     at process._tickCallback (node.js:419:13)
+16 error If you need help, you may report this *entire* log,
+16 error including the npm and node versions, at:
+16 error     <http://github.com/npm/npm/issues>
+17 error System Linux 3.11.0-23-generic
+18 error command "/usr/bin/node" "/usr/bin/npm" "search" "wraith"
+19 error cwd /home/jjagoda/Documents/mocli
+20 error node -v v0.10.29
+21 error npm -v 1.4.14
+22 error type unexpected_token
+23 verbose exit [ 1, true ]
